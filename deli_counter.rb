@@ -1,8 +1,9 @@
+require 'pry'
 
 def line(array)
 
   line_arr = array.each_with_index { |e,i| "#{i + 1}. #{e}"}
-
+  binding.pry
   if array.length == 0
     puts "The line is currently empty."
   else
